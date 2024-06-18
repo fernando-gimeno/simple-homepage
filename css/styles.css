@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --primary-color: #2A4DD0;
+  --success-color: #4CA154;
+  --background-color: #F2F9FE;
+  --text-primary: #223344;
+  --text-secondary: #6C788D;
+  --white-color: #fff;
+
+  --font-small: .875rem;
+  --font-btn: 1rem;
+  --font-body: 1.125rem;
+  --font-heading: 3.75rem;
+}
+
+html[data-theme='dark'] {
+  --primary-color: #2A4DD0;
+  --success-color: #4CA154;
+  --background-color: #111729;
+  --text-primary: #F2F9FE;
+  --text-secondary: #6C788D;
+  --white-color: #fff;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  box-sizing: content-box;
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.btn {
+  border: none;
+  padding: 16px 32px;
+  font-weight: 600;
+  border-radius: .5rem;
+}
+
+.btn-primary {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.gap-2 {
+  gap: 16px;
+}
+
+.gap-4 {
+  gap: 32px;
+}
+
+.mt-4 {
+  margin-top: 32px;
+}
+
+.mt-5 {
+  margin-top: 40px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 32px;
+  max-width: 1208px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 13;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--font-small);
+  font-weight: 600;
+}
+
+.active {
+  color: var(--text-primary);
+}
+
+.theme {
+  display: flex;
+  align-items: center;
+  background-color: #223344;
+  height: fit-content;
+  padding: 2px;
+  border-radius: 16px;
+}
+
+.selected {
+  background-color: #F2F9FE;
+  border-radius: 100%;
+  fill: red;
+}
+
+.main {
+  grid-area: 2 / 1 / 3 / 13;
+  display: flex;
+}
+
+@media screen and (max-width: 768px){
+  .main {
+    flex-direction: column-reverse;
+    row-gap: 3rem;
+  }
+}
+
+.hero-img {
+  width: 100%;
+}
+
+.font-heading {
+  font-size: 3.75rem;
+}
+
+.font-body {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.font-btn {
+  font-size: 1rem;
+}
+
+.font-small {
+  font-size: .875rem;
+  font-weight: 600;
+}
