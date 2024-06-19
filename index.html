@@ -1,55 +1,79 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/styles.css">
-  <title>Simple Homepage</title>
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <img class="logo" src="./images/alarado-icon-homepage.svg" alt="Alarado logo" />
-      <nav class="nav">
-        <ul class="nav-list">
-          <li><a class="nav-link active" href="#about-us">About us</a></li>
-          <li><a class="nav-link" href="#product">Product</a></li>
-          <li><a class="nav-link" href="#resource">Resource</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <label class="theme">
-        <img src="./images/Moon_fill_light.svg" alt="">
-        <img class="selected" src="./images/Sun_fill.svg" alt="">
-        <input type="checkbox" name="toggle-theme" id="toggle-theme" hidden>
-      </label>
-    </header>
-    <main class="main">
-      <section>
-        <p class="font-small text-primary">😎 SIMPLE WAY TO COMMUNICATE</p>
-        <h1 class="font-heading text-primary">Actions for Accessibility in Design</h1>
-        <p class="font-body text-secondary">The fastest way to build and deploy websites with resusable components.</p>
-        <div class="flex align-center gap-4">
-          <button class="btn btn-primary">GET STARTED</button>
-          <a href="">Get live demo</a>
-        </div>
-        <div class="flex align-center gap-2 mt-5">
-          <div class="flex align-center gap-2">
-            <img src="./images/Done_ring_round_fill.svg" alt="Done icon">
-            <p class="text-secondary font-small">No credit card required</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Simple Homepage</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          class="logo"
+          src="./images/alarado-icon-homepage.svg"
+          alt="Alarado logo"
+        />
+        <nav class="nav show">
+          <ul class="nav-list flex gap-5">
+            <li><a class="nav-link active" href="#about-us">About us</a></li>
+            <li><a class="nav-link" href="#product">Product</a></li>
+            <li><a class="nav-link" href="#resource">Resource</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
+            <li>
+              <label class="theme">
+                <img src="./images/Moon_fill_light.svg" alt="" />
+                <img class="selected" src="./images/Sun_fill.svg" alt="" />
+                <input
+                  type="checkbox"
+                  name="toggle-theme"
+                  id="toggle-theme"
+                  hidden
+                />
+              </label>
+            </li>
+            <div class="close-btn">
+              <img src="./images/close.svg" alt="Close icon" height="24">
+            </div>
+          </ul>
+        </nav>
+        <img class="menu" src="./images/menu.svg" alt="Menu icon" height="24" />
+      </header>
+      <main class="main">
+        <section class="left-side">
+          <p class="font-small text-primary">😎 SIMPLE WAY TO COMMUNICATE</p>
+          <h1 class="font-heading text-primary">
+            Actions for Accessibility in Design
+          </h1>
+          <p class="font-body text-secondary">
+            The fastest way to build and deploy websites with resusable
+            components.
+          </p>
+          <div class="flex align-center gap-4">
+            <button class="btn btn-primary">GET STARTED</button>
+            <a href="">Get live demo</a>
           </div>
-          <div class="flex align-center gap-2">
-            <img src="./images/Done_ring_round_fill.svg" alt="Done icon">
-            <p class="text-secondary font-small">No software to install</p>
+          <div class="flex align-center gap-2 mt-5">
+            <div class="flex align-center gap-2">
+              <img src="./images/Done_ring_round_fill.svg" alt="Done icon" />
+              <p class="text-secondary font-small">No credit card required</p>
+            </div>
+            <div class="flex align-center gap-2">
+              <img src="./images/Done_ring_round_fill.svg" alt="Done icon" />
+              <p class="text-secondary font-small">No software to install</p>
+            </div>
           </div>
-        </div>
-      </section>
-      <section>
-        <img class="hero-img" src="./images/hero-image-simple-homepage.png" alt="Hero image">
-      </section>
-    </main>
-  </div>
+        </section>
+        <section class="right-side">
+          <img
+            class="hero-img"
+            src="./images/hero-image-simple-homepage.png"
+            alt="Hero image"
+          />
+        </section>
+      </main>
+    </div>
 
-  <script src="./js/script.js"></script>
-</body>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
